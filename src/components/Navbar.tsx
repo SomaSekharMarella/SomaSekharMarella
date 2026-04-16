@@ -1,5 +1,6 @@
 import { useEffect, useState, type MouseEvent } from 'react';
 import { motion } from 'framer-motion';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
 const navLinks = [
   { href: '#home', label: 'Home' },
@@ -14,12 +15,34 @@ const navLinks = [
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (saved === 'dark' || (!saved && prefersDark)) {
+      setIsDark(true);
+      document.documentElement.classList.add('dark');
+    }
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  const toggleTheme = () => {
+    const nextDark = !isDark;
+    setIsDark(nextDark);
+    if (nextDark) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  };
 
   const handleClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
@@ -53,6 +76,14 @@ export function Navbar() {
               {label}
             </a>
           ))}
+          <button 
+            type="button" 
+            className="navbar__theme-toggle" 
+            onClick={toggleTheme}
+            aria-label="Toggle dark mode"
+          >
+            {isDark ? <FaSun aria-hidden /> : <FaMoon aria-hidden />}
+          </button>
         </nav>
       </div>
     </motion.header>

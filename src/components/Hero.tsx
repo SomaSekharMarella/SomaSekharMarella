@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 import { HiOutlineArrowDown } from 'react-icons/hi';
 import { useTypingRoles } from '../hooks/useTypingRoles';
 import { BlockchainNetworkVisual } from './BlockchainNetworkVisual';
@@ -13,6 +14,7 @@ const ROLES = [
 
 const GITHUB = 'https://github.com/SomaSekharMarella';
 const LINKEDIN = 'https://www.linkedin.com/in/soma-sekhar-marella-a16a67302/';
+const LEETCODE = 'https://leetcode.com/u/klu2300030411/';
 const RESUME = '/SomaSekharResume.pdf';
 
 export function Hero() {
@@ -105,6 +107,15 @@ export function Hero() {
                 aria-label="LinkedIn profile"
               >
                 <FaLinkedin />
+              </a>
+              <a
+                href={LEETCODE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero__icon-link"
+                aria-label="LeetCode profile"
+              >
+                <SiLeetcode />
               </a>
             </motion.div>
           </div>
