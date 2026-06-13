@@ -3,7 +3,6 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=SomaSekharMarella&color=blue)
 
 I’m currently working on Integrating AI with Blockchain!
-I’m currently learning DSA  
 
 How to reach me: marellasomasekhar51@gmail.com
 
