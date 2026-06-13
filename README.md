@@ -2,10 +2,10 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=SomaSekharMarella&color=blue)
 
-I’m currently working on Fullstack Projects  
+I’m currently working on Integrating AI with Blockchain!
 I’m currently learning DSA  
-I’m looking to collaborate on Cloud DevOps Projects  
-How to reach me: somasekharmarella@gmail.com
+
+How to reach me: marellasomasekhar51@gmail.com
 
 ## Languages and Tools:
 
