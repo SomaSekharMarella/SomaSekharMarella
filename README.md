@@ -41,8 +41,3 @@ How to reach me: marellasomasekhar51@gmail.com
 [![X](https://img.shields.io/badge/-X-000000?style=flat&logo=x&logoColor=white)](https://x.com/Somuu_PSPK)
 [![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=flat&logo=leetcode&logoColor=white)](https://leetcode.com/u/klu2300030411/)
 
-## GitHub Stats:
-
-![Soma's GitHub stats](https://github-readme-stats.vercel.app/api?username=SomaSekharMarella&show_icons=true&theme=radical)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=SomaSekharMarella&layout=compact&theme=radical)
